@@ -47,16 +47,16 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-3 text-center">
-                        <img src="../static/images/cafe.png"/>
+                        <img th:src="@{/static/images/epcafe.png}"/>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-8">
-                        <form action="/auth/login" method="post">
+                        <form action="/login" method="post" th:object="${user}">
                             <label for="login"><b>login</b></label>
-                            <input type="text" name="login" id="Email" class="form-control" required>
+                            <input th:field="*{login}" type="text" name="login" id="Email" class="form-control" required>
                             <br>
                             <label for="password"><b>Senha:</b></label>
-                            <input type="password" name="password" id="Senha" class="form-control" required>
+                            <input thfield="*{password}" type="password" name="password" id="Senha" class="form-control" required>
                             <br>
                             <div class="botoes-login" align="center">
                                 <input type="submit" class="btn btn-outline-dark" value="Entrar">

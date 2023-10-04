@@ -23,7 +23,8 @@ public class SecurityConfigurations {
         return httpSecurity
         .csrf(csrf -> csrf.disable())
         .authorizeHttpRequests(authorize->authorize
-        .requestMatchers("/auth/**").permitAll()
+        .requestMatchers("/login").permitAll()
+        .requestMatchers("/register").permitAll()
         .anyRequest().authenticated()
         )
         .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
