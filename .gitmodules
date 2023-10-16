@@ -1,0 +1,6 @@
+[submodule "Desenvolvimento/3.Implementacao/epcafes-grupo1"]
+	path = Desenvolvimento/3.Implementacao/epcafes-grupo1
+	url = https://github.com/lucas159311/epcafes-grupo1.git
+[submodule "Desenvolvimento/3.Implementacao/epcafes"]
+	path = Desenvolvimento/3.Implementacao/epcafes
+	url = https://github.com/murakamiedson/epcafes.git
